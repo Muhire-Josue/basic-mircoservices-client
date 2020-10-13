@@ -26,7 +26,7 @@ const PostList = () => {
         )
     })
     return (
-        <div>
+        <div className="d-flex flex-row flex-wrap justify-content-between">
             {renderedPosts}
         </div>
     )
