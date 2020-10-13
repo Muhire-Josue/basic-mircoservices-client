@@ -27,7 +27,7 @@ const PostList = () => {
     })
     return (
         <div>
-
+            {renderedPosts}
         </div>
     )
 }
