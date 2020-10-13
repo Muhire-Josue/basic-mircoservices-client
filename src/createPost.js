@@ -15,7 +15,7 @@ const CreatePost = () => {
                     <label>Title</label>
                     <input
                         value={title}
-                        onClick={e => setTitle(e.target.value)}
+                        onChange={e => setTitle(e.target.value)}
                         className="form-control"
                     />
                 </div>
