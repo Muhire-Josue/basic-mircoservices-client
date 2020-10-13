@@ -1,11 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 
 const CommentCreate = ({ postId }) => {
     const [content, setContent] = useState('');
 
+    const onSubmit = async e => {
+        e.preventDefault();
+
+        axios.post(`http://localhost:4001/posts/${postId}/comments'`, {
+            content
+        })
+    }
+
     return (
         <div>
-            <form>
+            <form onSubmit={onSubmit}>
                 <div className="form-group">
                     <label>New Comment</label>
                     <input
