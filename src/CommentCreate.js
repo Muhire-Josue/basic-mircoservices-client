@@ -8,7 +8,7 @@ const CommentCreate = ({ postId }) => {
     const onSubmit = async e => {
         e.preventDefault();
 
-        axios.post(`http://localhost:4001/posts/${postId}/comments'`, {
+        axios.post(`http://localhost:4001/posts/${postId}/comments`, {
             content
         });
     }
